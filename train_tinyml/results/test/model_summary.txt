@@ -1,0 +1,59 @@
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(11, 1250, 1, 1)]        0         
+                                                                 
+ max_pooling2d (MaxPooling2D  (11, 250, 1, 1)          0         
+ )                                                               
+                                                                 
+ stream (Stream)             (11, 123, 1, 3)           21        
+                                                                 
+ batch_normalization (BatchN  (11, 123, 1, 3)          12        
+ ormalization)                                                   
+                                                                 
+ activation (Activation)     (11, 123, 1, 3)           0         
+                                                                 
+ stream_1 (Stream)           (11, 60, 1, 3)            18        
+                                                                 
+ batch_normalization_1 (Batc  (11, 60, 1, 3)           12        
+ hNormalization)                                                 
+                                                                 
+ activation_1 (Activation)   (11, 60, 1, 3)            0         
+                                                                 
+ stream_2 (Stream)           (11, 57, 1, 6)            30        
+                                                                 
+ batch_normalization_2 (Batc  (11, 57, 1, 6)           24        
+ hNormalization)                                                 
+                                                                 
+ activation_2 (Activation)   (11, 57, 1, 6)            0         
+                                                                 
+ stream_3 (Stream)           (11, 19, 1, 6)            0         
+                                                                 
+ stream_4 (Stream)           (11, 8, 1, 12)            60        
+                                                                 
+ batch_normalization_3 (Batc  (11, 8, 1, 12)           48        
+ hNormalization)                                                 
+                                                                 
+ activation_3 (Activation)   (11, 8, 1, 12)            0         
+                                                                 
+ stream_5 (Stream)           (11, 2, 1, 24)            120       
+                                                                 
+ batch_normalization_4 (Batc  (11, 2, 1, 24)           96        
+ hNormalization)                                                 
+                                                                 
+ activation_4 (Activation)   (11, 2, 1, 24)            0         
+                                                                 
+ dropout (Dropout)           (11, 2, 1, 24)            0         
+                                                                 
+ stream_6 (Stream)           (11, 48)                  0         
+                                                                 
+ dense (Dense)               (11, 10)                  490       
+                                                                 
+ dense_1 (Dense)             (11, 2)                   22        
+                                                                 
+=================================================================
+Total params: 953
+Trainable params: 857
+Non-trainable params: 96
+_________________________________________________________________
